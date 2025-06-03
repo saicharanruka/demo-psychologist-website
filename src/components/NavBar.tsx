@@ -6,6 +6,7 @@ import Logo from "@/assets/logo.svg";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { NavLinks, mobileNavLinks } from "@/constants/data";
+import Button from "./Button";
 
 function NavBar() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -34,12 +35,17 @@ function NavBar() {
 						</Link>
 					))}
 				</div>
-				<Link
+				<Button
+					href="/contact"
+					body="Book Consultation"
+					className="hidden md:flex text-sm font-semibold"
+				/>
+				{/* <Link
 					href="/contact"
 					className="hidden md:flex rounded-full bg-transparent border-primary border text-primary p-2 px-2 font-semibold text-sm"
 				>
 					Book Consultation
-				</Link>
+				</Link> */}
 				<div className="justify-end flex gap-4 md:hidden">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"

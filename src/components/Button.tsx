@@ -17,8 +17,8 @@ const Button = ({
 		<Link
 			href={href}
 			className={twMerge(
-				` rounded-full p-2 text-primary border border-primary  ${
-					dark && "bg-primary text-white"
+				` rounded-full p-2 text-primary border border-primary hover:bg-primary hover:text-white transition    ${
+					dark && "bg-primary text-white hover:scale-105 "
 				}`,
 				className
 			)}

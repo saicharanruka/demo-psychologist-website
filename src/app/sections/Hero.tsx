@@ -1,12 +1,12 @@
 import Image from "next/image";
 
 import heroPicture from "@/assets/hero/hero.webp";
-import Link from "next/link";
 import Button from "@/components/Button";
+import HeroCard from "@/components/HeroCard";
 
 const Hero = () => {
 	return (
-		<section className="pt-4">
+		<section className="pt-3">
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-2">
 				<div className="flex flex-col justify-center px-5 bg-secondary rounded-2xl py-16 md:py-0">
 					<h1 className="text-[40px] text-primary font-normal leading-tight">
@@ -36,7 +36,12 @@ const Hero = () => {
 					className="rounded-2xl"
 				/>
 			</div>
-			<div></div>
+			<div className="pt-3 grid gap-4 grid-cols-1 md:grid-cols-4 md:h-28">
+				<HeroCard />
+				<HeroCard />
+				<HeroCard />
+				<HeroCard />
+			</div>
 		</section>
 	);
 };
