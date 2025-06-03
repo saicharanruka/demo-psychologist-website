@@ -11,32 +11,34 @@ function NavBar() {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
 		<div className="lg:sticky ">
-			<div className="flex justify-between border rounded-full p-3 items-center">
-				<div className="flex items-center">
+			<div className="flex justify-between border rounded-full p-3 px-3 items-center bg-secondary">
+				<div className="flex items-center gap-1">
 					<div className="flex items-center justify-start">
-						<Logo className="size-10" />
+						<Logo className="size-6" />
 					</div>
 
 					<Link href="/">
-						<h4 className="font-normal text-lg">logo</h4>
+						<h4 className="font-medium text-base text-primary">
+							Shruti Patnekar
+						</h4>
 					</Link>
 				</div>
-				<div className="hidden md:flex justify-center items-center gap-8 ">
+				<div className="hidden md:flex justify-center items-center gap-8  ">
 					{NavLinks.map((link) => (
-						<a
+						<Link
 							href={link.href}
 							key={link.title}
-							className="text-sm font-normal hover:font-medium hover:scale-105 hover:underline transition duration-300"
+							className="text-sm text-primary font-semibold hover:font-medium hover:scale-105 hover:underline transition duration-300"
 						>
 							{link.title}
-						</a>
+						</Link>
 					))}
 				</div>
 				<Link
 					href="/contact"
-					className="hidden md:flex rounded-full bg-primary text-white p-2 shadow-md px-5 font-semibold text-sm"
+					className="hidden md:flex rounded-full bg-transparent border-primary border text-primary p-2 px-2 font-semibold text-sm"
 				>
-					Contact
+					Book Consultation
 				</Link>
 				<div className="justify-end flex gap-4 md:hidden">
 					<svg
@@ -90,9 +92,13 @@ function NavBar() {
 					>
 						<div className="flex flex-col items-center gap-4 py-4">
 							{mobileNavLinks.map((link) => (
-								<a key={link.href} href={link.href} className="">
+								<Link
+									key={link.href}
+									href={link.href}
+									className="text-sm text-primary font-semibold hover:font-medium hover:scale-105 hover:underline transition duration-300"
+								>
 									{link.title}
-								</a>
+								</Link>
 							))}
 						</div>
 					</motion.div>

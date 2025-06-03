@@ -7,8 +7,12 @@ export const content = [
 ];
 export const theme = {
 	extend: {
+		fontFamily: {
+			primary: "var(--font-primary)",
+		},
 		colors: {
-			primary: "#3058A6",
+			primary: "#45695D",
+			secondary: "#EFEFEB",
 		},
 	},
 };

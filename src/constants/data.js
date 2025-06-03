@@ -4,16 +4,16 @@ export const NavLinks = [
 		href: "/",
 	},
 	{
-		title: "Portfolio",
-		href: "/portfolio",
+		title: "About Me",
+		href: "/about",
+	},
+	{
+		title: "Services",
+		href: "/services",
 	},
 	{
 		title: "Blog",
 		href: "/blog",
-	},
-	{
-		title: "About Me",
-		href: "/about",
 	},
 ];
 
@@ -23,19 +23,19 @@ export const mobileNavLinks = [
 		href: "/",
 	},
 	{
-		title: "Portfolio",
-		href: "/portfolio",
+		title: "About Me",
+		href: "/about",
+	},
+	{
+		title: "Services",
+		href: "/services",
 	},
 	{
 		title: "Blog",
 		href: "/blog",
 	},
 	{
-		title: "About Me",
-		href: "/about",
-	},
-	{
-		title: "Contact",
+		title: "Book Consulation",
 		href: "/contact",
 	},
 ];
