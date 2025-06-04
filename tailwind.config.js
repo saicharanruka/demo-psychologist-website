@@ -16,4 +16,5 @@ export const theme = {
 		},
 	},
 };
-export const plugins = [];
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+export const plugins = [require("tailwindcss-motion")];

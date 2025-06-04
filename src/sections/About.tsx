@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const About = () => {
 	return (
-		<section className="pt-24">
+		<section className="pt-24" id="about">
 			<h1 className="text-4xl text-primary">Meet Shruti Patnekar</h1>
 			<hr className="border border-primary md:w-1/2 my-3" />
 
@@ -34,7 +34,7 @@ const About = () => {
 						<li>Trauma and Grief Support</li>
 					</ul>
 					<Link
-						href="/about"
+						href="/#about"
 						className="text-primary uppercase underline text-sm font-medium pt-3"
 					>
 						Know more about me

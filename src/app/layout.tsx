@@ -21,7 +21,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" className={`${dmSans.variable} font-primary`}>
+		<html lang="en" className={`${dmSans.variable} font-primary scroll-smooth`}>
 			<body>
 				<main className={`max-w-6xl mx-4 mt-5 lg:mx-auto antialiased`}>
 					<NavBar />

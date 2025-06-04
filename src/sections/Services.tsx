@@ -8,7 +8,7 @@ import ServicesCard from "@/components/ServicesCard";
 
 const Services = () => {
 	return (
-		<section className="pt-24">
+		<section className="pt-24" id="services">
 			<h1 className="text-4xl text-primary">My Services</h1>
 			<div className="flex flex-col md:flex-row gap-3 pt-6">
 				<ServicesCard />

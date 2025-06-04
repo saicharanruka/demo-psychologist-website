@@ -8,7 +8,7 @@ import ArrowLeft from "@/assets/svg/left-arrow.svg";
 
 const Testimonials = () => {
 	return (
-		<section className="pt-24" id="services">
+		<section className="pt-24">
 			<h1 className="text-4xl font-medium text-primary">
 				Client&apos;s Feedback
 			</h1>
