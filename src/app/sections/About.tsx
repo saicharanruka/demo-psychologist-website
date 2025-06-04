@@ -40,7 +40,7 @@ const About = () => {
 						Know more about me
 					</Link>
 				</div>
-				<div className="p-5">
+				<div className="md:p-5">
 					<Image
 						src={facePic}
 						alt="Shruti's face picture"

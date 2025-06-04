@@ -2,32 +2,24 @@
 
 const faqs = [
 	{
-		question: "What makes Re:Fit's 24/7 access truly secure and convenient?",
+		question: "Is therapy covered by health insurance in India?",
 		answer:
 			" Our 24/7 access is facilitated by a secure, key-fob entry system, ensuring only active members can enter. Inside, we have comprehensive CCTV surveillance and emergency call buttons strategically placed for your safety and peace of mind during unstaffed hours.",
 	},
 	{
-		question:
-			"How does Re:Fit support members who are new to fitness or feeling intimidated?",
+		question: "What about confidentiality? Will what I share be kept private?",
 		answer:
-			"We pride ourselves on a welcoming atmosphere. For newcomers, we offer a complimentary orientation session with a trainer to demonstrate equipment usage and basic exercises. Our 'Re:Start Pack' also includes a personal consultation, specifically designed to help you build confidence and get comfortable in the gym environment.",
+			"Your privacy is paramount. Everything you discuss in therapy is strictly confidential. This means I will not share any information about our sessions with anyone – your family, friends, or educational institution – without your explicit written consent. The only exceptions are specific legal or ethical situations",
 	},
 	{
-		question: "Can I try out Re:Fit before committing to a membership?",
+		question: "What are my payment options?",
 		answer:
-			"bsolutely! We offer a one-day guest pass so you can experience our facility, equipment, and atmosphere firsthand. Simply visit during staffed hours to sign up for your complimentary trial.",
+			"Absolutely! We offer a one-day guest pass so you can experience our facility, equipment, and atmosphere firsthand. Simply visit during staffed hours to sign up for your complimentary trial.",
 	},
 	{
-		question:
-			"Does Re:Fit offer any specialized classes or workshops beyond standard group fitness?",
+		question: "What happens if I need to cancel or reschedule an appointment?",
 		answer:
 			"Yes, in addition to our regular group fitness schedule, Re:Fit frequently hosts specialized workshops on topics like nutrition, advanced lifting techniques, flexibility, and mindfulness. Check our in-gym notice board or social media for upcoming events and registration details.",
-	},
-	{
-		question:
-			"What measures does Re:Fit take to maintain cleanliness and hygiene, especially with 24/7 access?",
-		answer:
-			" We maintain rigorous cleaning protocols throughout the day, with dedicated staff during staffed hours and professional cleaning crews during off-peak times. We also provide ample sanitizing stations and disinfectant wipes throughout the gym for members to clean equipment before and after use, ensuring a hygienic environment for everyone.",
 	},
 ];
 
@@ -35,10 +27,10 @@ import React, { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 
 const FAQs = () => {
-	const [selectedIndex, setSelectedIndex] = useState(-1);
+	const [selectedIndex, setSelectedIndex] = useState(1);
 	return (
 		<section className="pt-24">
-			<div className="grid grid-cols-2">
+			<div className="grid grid-cols-1 md:grid-cols-2">
 				<div>
 					<h1 className="text-3xl max-w-sm text-primary font-medium capitalize">
 						Frequently Asked Questions

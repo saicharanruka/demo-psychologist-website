@@ -3,7 +3,7 @@ import Link from "next/link";
 const Footer = () => {
 	return (
 		<footer className="mt-24 bg-gray-950 text-white/60 font-medium">
-			<div className="flex justify-between py-20 px-24">
+			<div className="flex flex-col gap-16 md:flex-row justify-between py-20 px-24">
 				<div className="flex flex-col gap-3">
 					<h4 className="uppercase text-white">Contact</h4>
 					<div className="max-w-xs flex flex-col">
@@ -46,7 +46,7 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
-			<p className="px-12">@{new Date().getFullYear()}. ALLL RIGHTS RESERVED</p>
+			<p className="px-12">@{new Date().getFullYear()}. ALL RIGHTS RESERVED</p>
 		</footer>
 	);
 };

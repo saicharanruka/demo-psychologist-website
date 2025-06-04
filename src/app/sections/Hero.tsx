@@ -6,7 +6,7 @@ import HeroCard from "@/components/HeroCard";
 
 const Hero = () => {
 	return (
-		<section className="pt-3">
+		<section className="pt-3 duration-700 ">
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-2">
 				<div className="flex flex-col justify-center px-5 bg-secondary rounded-2xl py-16 md:py-0">
 					<h1 className="text-[40px] text-primary font-normal leading-tight">
@@ -18,13 +18,13 @@ const Hero = () => {
 					</p>
 					<div className="flex gap-2 pt-2">
 						<Button
-							className="px-5 font-medium"
+							className=" text-sm px-2 md:px-5 md:text-base font-medium"
 							href="/contact"
 							body="Book Consultation"
 							dark
 						/>
 						<Button
-							className="px-5 font-medium"
+							className="text-sm md:text-base px-3 md:px-5 font-medium"
 							href="/contact"
 							body="Check my blog"
 						/>

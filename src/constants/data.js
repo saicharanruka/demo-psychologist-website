@@ -9,7 +9,7 @@ export const NavLinks = [
 	},
 	{
 		title: "Services",
-		href: "/services",
+		href: "#services",
 	},
 	{
 		title: "Blog",
@@ -28,7 +28,7 @@ export const mobileNavLinks = [
 	},
 	{
 		title: "Services",
-		href: "/services",
+		href: "#services",
 	},
 	{
 		title: "Blog",
