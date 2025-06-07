@@ -33,7 +33,7 @@ const Hero = () => {
 				<Image
 					src={heroPicture}
 					alt="Picture of a man looking outside a train through the forest"
-					className="rounded-2xl motion-preset-slide-up motion-duration-2000"
+					className="rounded-2xl"
 				/>
 			</div>
 			<div className="pt-3 grid gap-4 grid-cols-1 md:grid-cols-4 md:h-28  motion-preset-slide-up motion-duration-1000">

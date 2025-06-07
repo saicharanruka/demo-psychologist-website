@@ -1,10 +1,11 @@
 "use client";
+import PlusCircle from "@/assets/svg/plus-circle.svg";
 
 const faqs = [
 	{
 		question: "Is therapy covered by health insurance in India?",
 		answer:
-			" Our 24/7 access is facilitated by a secure, key-fob entry system, ensuring only active members can enter. Inside, we have comprehensive CCTV surveillance and emergency call buttons strategically placed for your safety and peace of mind during unstaffed hours.",
+			" Yes, generally, mental health treatments are now covered by health insurance policies in India, similar to physical illnesses. This is a positive change thanks to regulations by the IRDAI and the Mental Healthcare Act of 2017. However, the extent of coverage can vary greatly between different insurance providers and specific plans.",
 	},
 	{
 		question: "What about confidentiality? Will what I share be kept private?",
@@ -14,12 +15,12 @@ const faqs = [
 	{
 		question: "What are my payment options?",
 		answer:
-			"Absolutely! We offer a one-day guest pass so you can experience our facility, equipment, and atmosphere firsthand. Simply visit during staffed hours to sign up for your complimentary trial.",
+			"We aim to make the payment process as convenient as possible for you. We accept payments through various digital modes, including popular UPI platforms like Google Pay, PhonePe, and Paytm. Bank transfers are also an accepted method.",
 	},
 	{
 		question: "What happens if I need to cancel or reschedule an appointment?",
 		answer:
-			"Yes, in addition to our regular group fitness schedule, Re:Fit frequently hosts specialized workshops on topics like nutrition, advanced lifting techniques, flexibility, and mindfulness. Check our in-gym notice board or social media for upcoming events and registration details.",
+			"We understand that unforeseen circumstances can arise. If you need to cancel or reschedule your appointment, we kindly request that you notify us at least 24 hours in advance. This allows us to offer the slot to another client who may be in need of support. ",
 	},
 ];
 
@@ -49,23 +50,11 @@ const FAQs = () => {
 								<h3 className="font-medium text-lg text-primary">
 									{faq.question}
 								</h3>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="24"
-									height="24"
-									viewBox="0 0 24 24"
-									fill="none"
-									stroke="currentColor"
-									strokeWidth="2"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									className={`text-primary flex-shrink-0 transition duration-300 border-2 rounded-full ${
+								<PlusCircle
+									className={`text-primary flex-shrink-0 transition duration-300 size-8 ${
 										selectedIndex === faqIndex && "rotate-45"
 									}`}
-								>
-									<line x1="12" y1="5" x2="12" y2="19"></line>
-									<line x1="5" y1="12" x2="19" y2="12"></line>
-								</svg>
+								/>
 							</div>
 							<AnimatePresence>
 								{selectedIndex === faqIndex && (
@@ -88,3 +77,22 @@ const FAQs = () => {
 };
 
 export default FAQs;
+{
+	/* <svg
+	xmlns="http://www.w3.org/2000/svg"
+	width="24"
+	height="24"
+	viewBox="0 0 24 24"
+	fill="none"
+	stroke="currentColor"
+	strokeWidth="2"
+	strokeLinecap="round"
+	strokeLinejoin="round"
+	className={`text-primary flex-shrink-0 transition duration-300 border border-primary rounded-full ${
+		selectedIndex === faqIndex && "rotate-45"
+	}`}
+>
+	<line x1="12" y1="5" x2="12" y2="19"></line>
+	<line x1="5" y1="12" x2="19" y2="12"></line>
+</svg>; */
+}

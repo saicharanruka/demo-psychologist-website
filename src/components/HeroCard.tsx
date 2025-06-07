@@ -9,8 +9,10 @@ const HeroCard = () => {
 				<CalenderSvg />
 			</div>
 			<div className="pl-3">
-				<h4 className="text-2xl text-primary">7+ Years</h4>
-				<p className="text-sm text-primary">Practicing Experience</p>
+				<h4 className="text-2xl text-primary font-medium">7+ Years</h4>
+				<p className="text-sm text-primary font-medium">
+					Practicing Experience
+				</p>
 			</div>
 		</div>
 	);
