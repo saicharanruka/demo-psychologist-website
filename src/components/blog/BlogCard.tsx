@@ -3,11 +3,16 @@ import Image from "next/image";
 import Link from "next/link";
 
 const BlogCard = () => {
+	const currentDate = new Date();
+
+	const year = currentDate.getFullYear();
+	const month = currentDate.getMonth() + 1; // Add 1 for human-readable month
+	const day = currentDate.getDate();
 	return (
 		<Link href="/blog" className="w-full mx-auto">
 			<div className=" flex flex-col items-center md:items-start hover:scale-105 transition ease-in">
 				<div className="flex gap-2 text-primary/80 text-sm font-semibold">
-					<p>21 MAY 2025</p>
+					<p>{`${day}/${month}/${year}`}</p>
 					<p>|</p>
 					<p>5 MIN READ</p>
 				</div>
