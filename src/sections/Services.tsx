@@ -9,7 +9,7 @@ import ServicesCard from "@/components/ServicesCard";
 const Services = () => {
 	return (
 		<section className="pt-24" id="services">
-			<h1 className="text-4xl text-primary">My Services</h1>
+			<h1 className="text-4xl text-primary">Services Offered</h1>
 			<div className="flex flex-col md:grid md:grid-cols-2  gap-3 pt-6">
 				<ServicesCard
 					heading="Individual Sessions"

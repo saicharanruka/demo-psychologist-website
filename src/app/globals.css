@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.infinite-scroll-container {
+	--animation-duration: 40s; /* default */
+	--animation-direction: forwards;
+	animation: scroll var(--animation-duration) linear infinite forwards;
+}
+
+.infinite-scroll-container:hover {
+	--animation-duration: 80s; /* slow down on hover */
+}

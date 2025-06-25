@@ -1,75 +1,40 @@
-"use client";
-import customerImage from "@/assets/testimonials/customer.webp";
-import customerImage2 from "@/assets/testimonials/woman.jpg";
-import Image from "next/image";
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
-import ArrowRight from "@/assets/svg/right-arrow.svg";
-import ArrowLeft from "@/assets/svg/left-arrow.svg";
-import { useState } from "react";
-
-const clientFeedbackData = [
+const patientFeedback = [
 	{
-		id: 0,
-		name: "Rahul Sharma",
-		profession: "Software Engineer",
-		image: customerImage,
-		testimonial:
-			"“I was juggling a demanding job and personal anxieties, and honestly, I felt stuck. Speaking with [Psychologist's Name] helped me gain so much clarity. I've learned to manage stress far better and feel more in control of my life. Highly recommend.”",
+		title: "Truly Life-Changing",
+		body: "What can I say? I feel truly blessed to have found Shruti. After 7 years of marriage, we became parents to a beautiful daughter, and their support through that journey was incredible. The entire team was so kind and helpful. This has been a life-changing experience for us.",
 	},
 	{
-		id: 1,
-		name: "Sonia Gandhi",
-		profession: "Marketing Executive",
-		image: customerImage2,
-		testimonial:
-			"“Speaking with [Psychologist's Name] helped me gain so much clarity. I've learned to manage stress far better and feel more in control of my life. Highly recommend.”",
+		title: "Gained Clarity and Calm",
+		body: "I came in feeling overwhelmed and scattered, struggling with daily stress. The sessions here helped me gain so much clarity. I've learned practical ways to manage my thoughts and emotions, and I feel a profound sense of calm that I hadn't experienced in years. It's been incredibly empowering.",
+	},
+	{
+		title: "A Safe and Understanding Space",
+		body: "It's hard to put into words how much the support here has meant to me. I finally found a safe, non-judgmental space to talk about things I'd kept hidden for years. The understanding and guidance I received were instrumental in helping me navigate a very difficult period in my life.",
+	},
+	{
+		title: "Improved Relationships",
+		body: "Our family dynamics were quite strained, and we were struggling to communicate effectively. Through family therapy, we've learned to listen, understand, and connect on a much deeper level. The improvement in our relationships is remarkable, and we're truly grateful for the guidance provided.",
+	},
+	{
+		title: "Found My Strength",
+		body: "I never thought I'd seek therapy, but I'm so glad I did. It wasn't about being 'sick,' but about finding my own strength. I've developed healthier coping mechanisms and a better understanding of myself. It's been a journey of self-discovery, and I feel much more resilient now.",
+	},
+	{
+		title: "Professional and Compassionate",
+		body: "From the very first session, I felt heard and respected. The approach was professional yet deeply compassionate. I appreciated the practical strategies and insights shared, which have helped me overcome significant challenges and improve my overall well-being. Highly recommend their expertise.",
 	},
 ];
 
+export type testimonialsType = typeof patientFeedback;
+
 const Testimonials = () => {
-	const [curr, setCurr] = useState(clientFeedbackData[0]);
-
-	function nextTestimonial() {
-		setCurr(clientFeedbackData[curr.id + 1]);
-	}
-	function previousTestimonial() {
-		setCurr(clientFeedbackData[curr.id - 1]);
-	}
-
 	return (
 		<section className="pt-24">
-			<h1 className="text-4xl font-medium text-primary">
-				Client&apos;s Feedback
-			</h1>
-			<div className="grid grid-cols-1 gap-3 md:gap-0 md:grid-cols-3 px-10 pt-6 transition">
-				<Image
-					src={curr.image}
-					alt="Customer"
-					className="rounded-3xl col-span-1 object-center"
-					height={300}
-					width={300}
-				/>
-				<div className="flex flex-col justify-between md:col-span-2 rounded-2xl bg-secondary text-primary">
-					<div className="p-6">
-						<p className="text-primary max-w-sm font-medium">
-							{curr.testimonial}
-						</p>
-					</div>
-					<div className="flex justify-between p-6">
-						<div className="flex flex-col text-primary font-medium">
-							<p className="uppercase font-semibold">{curr.name}</p>
-							<p>{curr.profession}</p>
-						</div>
-						<div className="flex p-6 gap-3 opacity-80">
-							<button onClick={previousTestimonial}>
-								<ArrowLeft className="size-6 " />
-							</button>
-							<button onClick={nextTestimonial}>
-								<ArrowRight className="size-6" />
-							</button>
-						</div>
-					</div>
-				</div>
+			<h1 className="text-4xl font-medium text-primary">Stories of Hope</h1>
+			<div className="pt-4">
+				<InfiniteMovingCards items={patientFeedback} />
 			</div>
 		</section>
 	);

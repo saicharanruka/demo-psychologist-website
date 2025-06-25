@@ -36,7 +36,7 @@ function NavBar() {
 					))}
 				</div>
 				<Button
-					href="/contact"
+					href="/"
 					body="Book Consultation"
 					className="hidden md:flex text-sm font-semibold"
 				/>

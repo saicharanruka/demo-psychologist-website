@@ -14,6 +14,20 @@ export const theme = {
 			primary: "#45695D",
 			secondary: "#EFEFEB",
 		},
+		animation: {
+			scroll:
+				"scroll var(--animation-duration) var(--animation-direction, forwards) linear infinite",
+		},
+		keyframes: {
+			scroll: {
+				from: {
+					transform: "translateX(0%);",
+				},
+				to: {
+					transform: "translateX(-50%);",
+				},
+			},
+		},
 	},
 };
 // eslint-disable-next-line @typescript-eslint/no-require-imports

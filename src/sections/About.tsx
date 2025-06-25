@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 import facePic from "@/assets/about/shruti.webp";
-import Link from "next/link";
+// import Link from "next/link";
 
 const About = () => {
 	return (
@@ -33,12 +33,12 @@ const About = () => {
 						<li>Personal Growth and Self-Esteem</li>
 						<li>Trauma and Grief Support</li>
 					</ul>
-					<Link
+					{/* <Link
 						href="/#about"
 						className="text-primary uppercase underline text-sm font-medium pt-3"
 					>
 						Know more about me
-					</Link>
+					</Link> */}
 				</div>
 				<div className="md:p-5">
 					<Image
@@ -48,6 +48,9 @@ const About = () => {
 					/>
 				</div>
 			</div>
+			{/* <div className="grid grid-cols-2">
+				<div className="bg-secondary rounded-full">Location</div>
+			</div> */}
 		</section>
 	);
 };
